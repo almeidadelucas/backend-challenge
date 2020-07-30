@@ -1,0 +1,10 @@
+const path = require('path');
+
+console.log('----------------', process.env.NODE_ENV);
+
+module.exports = {
+  'env': process.env.NODE_ENV,
+  'config': path.resolve('src', 'config', 'config.json'),
+  'models-path': path.resolve('src', 'models'),
+  'migrations-path': path.resolve('src', 'migrations')
+};

@@ -1,0 +1,37 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "export NODE_ENV=test && sequelize db:create && sequelize db:migrate && jest && sequelize db:drop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/almeidadelucas/backend-challenge.git"
+  },
+  "keywords": [
+    "challenge",
+    "backend",
+    "node",
+    "javascript"
+  ],
+  "author": "Lucas de Almeida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/almeidadelucas/backend-challenge/issues"
+  },
+  "homepage": "https://github.com/almeidadelucas/backend-challenge#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.4",
+    "npx": "^10.2.2",
+    "pg": "^8.3.0",
+    "sequelize": "^6.3.3",
+    "sequelize-cli": "^6.2.0",
+    "supertest": "^4.0.2"
+  }
+}
